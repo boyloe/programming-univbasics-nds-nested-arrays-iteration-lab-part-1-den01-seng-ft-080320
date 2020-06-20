@@ -1,3 +1,5 @@
+require "pry"
+
 def find_even_values(src)
   even_numbers = []
   row_index = 0
@@ -6,6 +8,7 @@ def find_even_values(src)
     while element_index < src[row_index].count do
       if src[row_index][element_index] % 2 == 0 
         even_numbers << src[row_index][element_index]
+        
       end   
       element_index += 1 
     end  
